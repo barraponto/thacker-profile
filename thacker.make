@@ -9,7 +9,6 @@ includes[tecidowysiwyg] = http://github.com/barraponto/tecido-drupal-starterkit/
 includes[tecidocaptcha] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidocaptcha.make
 ;includes[tecidodev] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidodev.make
 
-
 ;themes for thacker
 projects[] = fusion
 projects[thacker-theme][type] = theme
@@ -35,6 +34,7 @@ projects[] = content_profile
 projects[] = context_content_profile
 projects[] = geo
 projects[] = geocode
+projects[] = realname
 
 ;thacker_page feature and dependencies
 projects[thacker-page][type] = module
