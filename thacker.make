@@ -5,6 +5,8 @@ api = 2
 includes[tecidobase] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidobase.make
 includes[tecidoimage] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidoimage.make
 includes[tecidodate] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidodate.make
+includes[tecidoprofile] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidoprofile.make
+includes[tecidogeo] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidogeo.make
 includes[tecidowysiwyg] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidowysiwyg.make
 includes[tecidocaptcha] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidocaptcha.make
 ;includes[tecidodev] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidodev.make
@@ -27,13 +29,6 @@ projects[] = link
 projects[thacker-profile][type] = module
 projects[thacker-profile][download][type] = git
 projects[thacker-profile][download][url] = git://github.com/barraponto/thacker-profile-feature.git
-projects[postal][type] = module
-projects[postal][download][type] = git
-projects[postal][download][url] = git://github.com/barraponto/postal.git
-projects[] = content_profile
-projects[] = context_content_profile
-projects[] = geo
-projects[] = geocode
 projects[] = realname
 
 ;thacker_page feature and dependencies
