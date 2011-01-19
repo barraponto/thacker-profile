@@ -40,6 +40,7 @@ projects[thacker-page][download][url] = git://github.com/barraponto/thacker-page
 projects[thacker-event][type] = module
 projects[thacker-event][download][type] = git
 projects[thacker-event][download][url] = git://github.com/barraponto/thacker-event-feature.git
+projects[] = signup
 
 ;thacker_heartbeat feature and dependencies
 projects[thacker-heartbeat][type] = module
