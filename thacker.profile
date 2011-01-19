@@ -136,10 +136,9 @@ function thacker_profile_tasks(&$task, $url) {
   install_include(thacker_profile_modules());
 
   //instead of zen, use the project sub-theme
-  install_enable_theme('thacker');
-  install_default_theme('thacker');
   install_disable_theme('garland');
   install_admin_theme('cube');
+  install_default_theme('thacker');
 
   //restrict user creation to administrators
   variable_set('user_register',0);
