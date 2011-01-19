@@ -30,7 +30,6 @@ projects[thacker-profile][type] = module
 projects[thacker-profile][download][type] = git
 projects[thacker-profile][download][url] = git://github.com/barraponto/thacker-profile-feature.git
 projects[] = realname
-projects[] = imagecache_profiles
 
 ;thacker_page feature and dependencies
 projects[thacker-page][type] = module
