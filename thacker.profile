@@ -156,6 +156,23 @@ function thacker_profile_tasks(&$task, $url) {
   //set dt_project as a group node
   variable_set('og_content_type_usage_dt_project','group');
 
+  //create taxonomies and add terms
+  $skills_vocabulary_content_types = array('dt_project', 'profile');
+  $skills_vocabulary_properties = array(
+    'tags' => 1,
+    'description' => 'The skills associated with a Project or User.',
+    'help' => 'Design, Drupal, HTML, Copy writing, etc.',
+  );
+  install_taxonomy_add_vocabulary('skills', $skills_vocabulary_content_types, $skills_vocabulary_properties);
+
+
+  $status_vocabulary_content_types = array('dt_project');
+  $status_vocabulary_properties = array(
+    'description' => 'The status of Data Transparency projects.',
+    'help' => 'Mark whether your project is done, in progress, active or still an idea.',
+  );
+  $status_vocabulary = install_taxonomy_add_vocabulary('status', $status_vocabulary_content_types, $status_vocabulary_properties);
+
   //set profile as a content_profile and load settings
   variable_set('content_profile_use_profile', 1);
   $content_profile_profile_settings =  array(
@@ -172,6 +189,12 @@ function thacker_profile_tasks(&$task, $url) {
       ),
     );
   variable_set('content_profile_profile', $content_profile_profile_settings);
+
+  //create terms for status
+  $status_vocabulary_terms = array('ideia', 'em andamento', 'ativo', 'fechado');
+  foreach ($status_vocabulary_terms as $term) {
+    install_taxonomy_add_term($status_vocabulary, $term);
+  }
 
   //set event as a signup enabled content type and set date field to field_event_date
   variable_set('signup_node_default_state_dt_event','enabled_on');
