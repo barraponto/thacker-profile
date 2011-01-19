@@ -40,7 +40,7 @@ function thacker_profile_modules() {
     'content_profile', 'content_profile_registration', 'context_content_profile', 'geo', 'geocode', 'postal', 'postal_field', 'geocode_widget', 'realname', 'thacker_profile',
 
     //thacker event feature
-    'thacker_event',
+    'signup', 'thacker_event',
     
     //thacker heartbeat feature
     'heartbeat', 'rules', 'hrules', 'shouts', 'og_activity', 'thacker_heartbeat',
