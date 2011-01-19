@@ -171,7 +171,7 @@ function thacker_profile_tasks(&$task, $url) {
   install_taxonomy_add_vocabulary('skills', $skills_vocabulary_content_types, $skills_vocabulary_properties);
 
 
-  $status_vocabulary_content_types = array('dt_project');
+  $status_vocabulary_content_types = array('dt_project' => 'dt_project');
   $status_vocabulary_properties = array(
     'description' => 'The status of Data Transparency projects.',
     'help' => 'Mark whether your project is done, in progress, active or still an idea.',
