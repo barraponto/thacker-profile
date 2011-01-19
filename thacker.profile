@@ -159,7 +159,10 @@ function thacker_profile_tasks(&$task, $url) {
   variable_set('og_content_type_usage_dt_project','group');
 
   //create taxonomies and add terms
-  $skills_vocabulary_content_types = array('dt_project', 'profile');
+  $skills_vocabulary_content_types = array(
+    'dt_project' => 'dt_project',
+    'profile' => 'profile',
+  );
   $skills_vocabulary_properties = array(
     'tags' => 1,
     'description' => 'The skills associated with a Project or User.',
