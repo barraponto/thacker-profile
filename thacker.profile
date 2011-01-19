@@ -153,6 +153,30 @@ function thacker_profile_tasks(&$task, $url) {
   variable_set('recaptcha_public_key', '6Lfqc8ASAAAAACjJ2c6a2xjdcs7pqrQh-2YigNub');
   variable_set('recaptcha_private_key', '6Lfqc8ASAAAAALBfxPKgJLFxtUAge90HQ8dHccui');
 
+  //set dt_project as a group node
+  variable_set('og_content_type_usage_dt_project','group');
+
+  //set profile as a content_profile and load settings
+  variable_set('content_profile_use_profile', 1);
+  $content_profile_profile_settings =  array(
+      'weight' => 0,
+      'user_display' => 'full',
+      'edit_link' => 1,
+      'edit_tab' => 'top',
+      'add_link' => 1,
+      'registration_use' => 1,
+      'admin_user_create_use' => 0,
+      'registration_hide' => array(
+        0 => 'field_user_geocode',
+        1 => 'other',
+      ),
+    );
+  variable_set('content_profile_profile', $content_profile_profile_settings);
+
+  //set event as a signup enabled content type and set date field to field_event_date
+  variable_set('signup_node_default_state_dt_event','enabled_on');
+  variable_set('signup_date_field_dt_event','field_event_date');
+
   //set wysiwyg variables
   db_query("INSERT INTO {wysiwyg} (format, editor, settings) VALUES ('%d', '%s', '%s')", 2, 'tinymce', thacker_wysiwyg_settings('tinymce'));
 
