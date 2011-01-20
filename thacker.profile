@@ -38,7 +38,7 @@ function thacker_profile_modules() {
 
     //thacker content profile
     'content_profile', 'content_profile_registration', 'context_content_profile', 
-    'geo', 'geocode', 'postal', 'postal_field', 'geocode_widget', 
+    'geo', 'geo_field', 'geocode', 'postal', 'postal_field', 'geocode_widget', 
     'imagecache_profiles', 'realname', 'thacker_profile',
 
     //thacker event feature
