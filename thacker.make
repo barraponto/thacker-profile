@@ -13,41 +13,46 @@ includes[tecidocaptcha] = http://github.com/barraponto/tecido-drupal-starterkit/
 
 ;themes for thacker
 projects[] = fusion
-projects[thacker-theme][type] = theme
-projects[thacker-theme][download][type] = git
-projects[thacker-theme][download][url] = git://github.com/barraponto/thacker-thacker-theme.git
+projects[thacker_theme][type] = theme
+projects[thacker_theme][download][type] = git
+projects[thacker_theme][download][url] = git://github.com/barraponto/thacker-thacker-theme.git
 projects[] = skinr
 
 ;thacker_project feature and dependencies
-projects[thacker-project][type] = module
-projects[thacker-project][download][type] = git
-projects[thacker-project][download][url] = git://github.com/barraponto/thacker-project-feature.git
+projects[thacker_project][type] = module
+projects[thacker_project][download][type] = git
+projects[thacker_project][download][url] = git://github.com/barraponto/thacker-project-feature.git
 projects[] = og
 projects[] = link 
 
 ;thacker_profile feature and dependencies
-projects[thacker-profile][type] = module
-projects[thacker-profile][download][type] = git
-projects[thacker-profile][download][url] = git://github.com/barraponto/thacker-profile-feature.git
+projects[thacker_profile][type] = module
+projects[thacker_profile][download][type] = git
+projects[thacker_profile][download][url] = git://github.com/barraponto/thacker-profile-feature.git
 projects[] = realname
 
 ;thacker_page feature and dependencies
-projects[thacker-page][type] = module
-projects[thacker-page][download][type] = git
-projects[thacker-page][download][url] = git://github.com/barraponto/thacker-page-feature.git
+projects[thacker_page][type] = module
+projects[thacker_page][download][type] = git
+projects[thacker_page][download][url] = git://github.com/barraponto/thacker-page-feature.git
 
 ;thacker_event feature and dependencies
-projects[thacker-event][type] = module
-projects[thacker-event][download][type] = git
-projects[thacker-event][download][url] = git://github.com/barraponto/thacker-event-feature.git
+projects[thacker_event][type] = module
+projects[thacker_event][download][type] = git
+projects[thacker_event][download][url] = git://github.com/barraponto/thacker-event-feature.git
 projects[] = signup
 
 ;thacker_heartbeat feature and dependencies
-projects[thacker-heartbeat][type] = module
-projects[thacker-heartbeat][download][type] = git
-projects[thacker-heartbeat][download][url] = git://github.com/barraponto/thacker-heartbeat-feature.git
+projects[thacker_heartbeat][type] = module
+projects[thacker_heartbeat][download][type] = git
+projects[thacker_heartbeat][download][url] = git://github.com/barraponto/thacker-heartbeat-feature.git
 projects[] = heartbeat
 projects[] = rules
+
+;thacker distro features
+projects[thacker_distro][type] = module
+projects[thacker_distro][download][type] = git
+projects[thacker_distro][download][url] = git://github.com/barraponto/thacker-distro-feature.git
 
 ;extra modules
 projects[] = semanticviews

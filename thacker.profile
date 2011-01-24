@@ -50,6 +50,9 @@ function thacker_profile_modules() {
     //thacker page feature
     'thacker_page',
 
+    //thacker distro
+    'thacker_distro',
+
     //other contrib modules
     'admin', 'adminrole', 'openid_selector', 'pathauto', 'path_redirect', 'semanticviews', 'skinr', 'token', 'transliteration', 'vertical_tabs',
   );
