@@ -45,7 +45,7 @@ function thacker_profile_modules() {
     'signup', 'thacker_event',
     
     //thacker heartbeat feature
-    'heartbeat', 'rules', 'hrules', 'shouts', 'og_activity', // 'thacker_heartbeat',
+    'heartbeat', 'rules', 'hrules', 'shouts', 'og_activity', 'thacker_heartbeat',
 
     //thacker page feature
     'thacker_page',
