@@ -29,3 +29,10 @@ thacker-stub.make with the following contents:
 Then run drush make on the makefile, pointing to a path where the drupal root will be installed:
 
   drush make thacker-stub.make thacker
+
+Known Issues
+============
+
+For some reason, the CCK fields won't show up until a admin/build/features is visitted once.
+Alternatively, you can run
+    drush php-eval 'features_rebuild();'
