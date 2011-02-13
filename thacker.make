@@ -2,14 +2,14 @@ core = 6.x
 api = 2
 
 ;Include base and usual features
-includes[tecidobase] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidobase.make
-includes[tecidoimage] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidoimage.make
-includes[tecidodate] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidodate.make
-includes[tecidoprofile] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidoprofile.make
-includes[tecidogeo] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidogeo.make
-includes[tecidowysiwyg] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidowysiwyg.make
-includes[tecidocaptcha] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidocaptcha.make
-;includes[tecidodev] = http://github.com/barraponto/tecido-drupal-starterkit/raw/master/tecidodev.make
+includes[tecidobase] = tecidobase.make
+includes[tecidoimage] = tecidoimage.make
+includes[tecidodate] = tecidodate.make
+includes[tecidoprofile] = tecidoprofile.make
+includes[tecidogeo] = tecidogeo.make
+includes[tecidowysiwyg] = tecidowysiwyg.make
+includes[tecidocaptcha] = tecidocaptcha.make
+;includes[tecidodev] = tecidodev.make
 
 ;themes for thacker
 projects[] = fusion
@@ -55,5 +55,4 @@ projects[thacker_distro][download][type] = git
 projects[thacker_distro][download][url] = git://github.com/barraponto/thacker-distro-feature.git
 
 ;extra modules
-projects[] = semanticviews
 projects[] = openid_selector
