@@ -13,9 +13,9 @@ includes[tecidocaptcha] = tecidocaptcha.make
 
 ;themes for thacker
 projects[] = fusion
-projects[thacker_theme][type] = theme
-projects[thacker_theme][download][type] = git
-projects[thacker_theme][download][url] = git://github.com/barraponto/thacker-thacker-theme.git
+projects[thacker][type] = theme
+projects[thacker][download][type] = git
+projects[thacker][download][url] = git://github.com/barraponto/thacker-thacker-theme.git
 projects[] = skinr
 
 ;thacker_project feature and dependencies
