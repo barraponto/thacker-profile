@@ -14,7 +14,7 @@ projects[] = context
 projects[] = features
 projects[] = pathauto
 projects[] = views
-projects[] = semantic_views
+projects[] = semanticviews
 projects[] = ctools
 projects[] = strongarm
 
