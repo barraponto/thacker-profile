@@ -63,7 +63,7 @@ function thacker_profile_modules() {
     'adminrole', 'password', 'path_redirect', 'semanticviews', 'token', 'transliteration',
 
     //thacker contrib modules
-    'openid_selector', 'skinr' 
+    'libraries', 'openid_selector', 'skinr' 
   );
 }
 

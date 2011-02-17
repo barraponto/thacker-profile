@@ -56,3 +56,4 @@ projects[thacker_distro][download][url] = git://github.com/barraponto/thacker-di
 
 ;extra modules
 projects[] = openid_selector
+projects[] = libraries
