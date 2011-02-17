@@ -39,3 +39,5 @@ If you have installed drush, you can run
 
     drush php-eval 'features_rebuild();'
     drush fra --yes
+    drush cc all
+
