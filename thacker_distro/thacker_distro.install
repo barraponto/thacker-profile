@@ -1,0 +1,11 @@
+<?php
+
+function thacker_distro() {
+  module_load_include('inc', 'thacker_distro', 'thacker_distro.strongarm');
+
+  $variables = thacker_distro_strongarm();
+
+  foreach ($variables as $variable) {
+    variable_set($variable->name, $variable->value);
+  }
+}
