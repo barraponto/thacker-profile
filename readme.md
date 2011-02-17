@@ -34,5 +34,8 @@ Known Issues
 ============
 
 For some reason, the CCK fields won't show up until a admin/build/features is visitted once.
-Alternatively, you can run
+Also, the features have to be reverted after install
+If you have installed drush, you can run
+
     drush php-eval 'features_rebuild();'
+    drush fra --yes
