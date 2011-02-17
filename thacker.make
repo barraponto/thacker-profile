@@ -57,5 +57,5 @@ projects[thacker_distro][download][url] = git://github.com/barraponto/thacker-di
 ;extra modules
 projects[openid_selector][patch][] = http://drupal.org/files/issues/openid_selector-1064298_0.patch 
 projects[] = libraries
-libraries[openid_selector][download][type] = file
-libraries[openid_selector][download][url] = http://openid-selector.googlecode.com/files/openid-selector-1.3.zip
+libraries[openid-selector][download][type] = file
+libraries[openid-selector][download][url] = http://openid-selector.googlecode.com/files/openid-selector-1.3.zip
