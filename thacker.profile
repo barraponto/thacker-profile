@@ -149,9 +149,6 @@ function thacker_profile_tasks(&$task, $url) {
 
   install_include(thacker_profile_modules());
 
-  //set dt_project as a group node
-  variable_set('og_content_type_usage_dt_project','group');
-
   //create taxonomies and add terms
   $skills_vocabulary_content_types = array(
     'dt_project' => 'dt_project',
