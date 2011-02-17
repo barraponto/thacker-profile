@@ -15,8 +15,11 @@ function thacker_profile_modules() {
     //core modules
     'comment', 'help', 'menu', 'path', 'search', 'taxonomy',
 
+    //localization modules
+    'locale', 'l10n_update', 'l10n_client',
+
     //build modules
-    'ctools', 'context', 'features', 'views',
+    'ctools', 'context', 'features', 'pathauto', 'strongarm', 'views',
 
     //base cck modules
     'content', 'text', 'number', 'optionwidgets',
@@ -53,8 +56,14 @@ function thacker_profile_modules() {
     //thacker distro
     'thacker_distro',
 
+    //interface enhancement modules
+    'admin', 'admin_theme', 'better_messages', 'nodeformcols', 'toolbar',
+
     //other contrib modules
-    'admin', 'adminrole', 'openid_selector', 'pathauto', 'path_redirect', 'semanticviews', 'skinr', 'token', 'transliteration', 'vertical_tabs',
+    'adminrole', 'password', 'path_redirect', 'semanticviews', 'token', 'transliteration',
+
+    //thacker contrib modules
+    'openid_selector', 'skinr' 
   );
 }
 
@@ -139,24 +148,6 @@ function thacker_profile_task_list() {
 function thacker_profile_tasks(&$task, $url) {
 
   install_include(thacker_profile_modules());
-
-  //instead of zen, use the project sub-theme
-  install_disable_theme('garland');
-  install_admin_theme('cube');
-  install_default_theme('thacker');
-
-  //restrict user creation to administrators
-  variable_set('user_register',0);
-
-  //set pathauto update action to path redirect
-  variable_set('pathauto_update_action', 3);
-
-  //set default captcha to recaptcha
-  variable_set('captcha_default_challenge','recaptcha/reCAPTCHA');
-
-  //set recaptcha api key
-  variable_set('recaptcha_public_key', '6Lfqc8ASAAAAACjJ2c6a2xjdcs7pqrQh-2YigNub');
-  variable_set('recaptcha_private_key', '6Lfqc8ASAAAAALBfxPKgJLFxtUAge90HQ8dHccui');
 
   //set dt_project as a group node
   variable_set('og_content_type_usage_dt_project','group');
