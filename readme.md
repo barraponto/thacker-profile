@@ -28,7 +28,11 @@ thacker-stub.make with the following contents:
 
 Then run drush make on the makefile, pointing to a path where the drupal root will be installed:
 
-  drush make thacker-stub.make thacker
+    drush make thacker-stub.make thacker
+
+If you want to install with brazilian interface as an option (you still have to choose Brazilian Portugues during install):
+
+    drush make thacker-stub.make thacker --translations="pt-br"
 
 Known Issues
 ============
