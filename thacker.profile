@@ -149,6 +149,8 @@ function thacker_profile_tasks(&$task, $url) {
 
   install_include(thacker_profile_modules());
 
+  install_enable_theme('thacker');
+
   //create taxonomies and add terms
   $skills_vocabulary_content_types = array(
     'dt_project' => 'dt_project',
