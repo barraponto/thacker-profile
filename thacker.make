@@ -29,7 +29,9 @@ projects[] = link
 projects[thacker_profile][type] = module
 projects[thacker_profile][download][type] = git
 projects[thacker_profile][download][url] = git://github.com/barraponto/thacker-profile-feature.git
-projects[] = realname
+projects[realname] = 1.4
+;patch realname to avoid conflicts with imagecache_profiles
+projects[realname][patch][] = http://drupal.org/files/issues/1070102-realname-no-not-destory-user-picture.patch
 
 ;thacker_page feature and dependencies
 projects[thacker_page][type] = module
@@ -55,6 +57,7 @@ projects[thacker_distro][download][type] = git
 projects[thacker_distro][download][url] = git://github.com/barraponto/thacker-distro-feature.git
 
 ;extra modules
+projects[openid_selector] = 1.5
 projects[openid_selector][patch][] = http://drupal.org/files/issues/openid_selector-1064298_0.patch 
 projects[] = libraries
 libraries[openid-selector][download][type] = file
